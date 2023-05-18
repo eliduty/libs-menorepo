@@ -1,6 +1,6 @@
 {
   "name": "libs-menorepo",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "private": true,
@@ -9,7 +9,8 @@
     "build": "pnpm -r --filter=./packages/* run build",
     "taze": "taze -Ir",
     "typecheck": "tsc --noEmit",
-    "release": "release-it"
+    "release1": "pnpm -r --filter=./packages/* run release",
+    "release": "bumpp -r"
   },
   "keywords": [],
   "author": "",
@@ -25,5 +26,16 @@
     "typescript": "^5.0.4",
     "unbuild": "^1.2.1"
   },
-  "packageManager": "pnpm@8.5.1"
+  "packageManager": "pnpm@8.5.1",
+  "release-it": {
+    "git": {
+      "requireCleanWorkingDir": false
+    },
+    "github": {
+      "release": true,
+      "comments": {
+        "submit": true
+      }
+    }
+  }
 }
