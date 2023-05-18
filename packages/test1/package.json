@@ -1,6 +1,6 @@
 {
   "name": "@eliduty/test1",
-  "version": "1.0.10",
+  "version": "1.0.0",
   "description": "",
   "type": "module",
   "exports": {
@@ -19,16 +19,15 @@
     "@eliduty/test": "workspace:*"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "unbuild",
-    "release": "release-it --ci"
+    "release": "release-it"
   },
   "keywords": [],
   "author": "eliduty<eliduty@qq.com>",
   "license": "MIT",
   "release-it": {
     "git": {
-      "commitMessage": "chore: release @eliduty/test1 v${version}",
+      "commitMessage": "chore: release v${version}",
       "tag": false,
       "requireCleanWorkingDir": false
     }

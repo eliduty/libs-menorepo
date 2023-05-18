@@ -9,8 +9,8 @@
     "build": "pnpm -r --filter=./packages/* run build",
     "taze": "taze -Ir",
     "typecheck": "tsc --noEmit",
-    "release1": "pnpm -r --filter=./packages/* run release",
-    "release": "bumpp -r"
+    "release:pkg": "pnpm -r --filter=./packages/* run release",
+    "release": "release-it"
   },
   "keywords": [],
   "author": "",
