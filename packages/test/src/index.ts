@@ -6,7 +6,7 @@ export { type FunctionType };
  * @Github: https://github.com/eliduty
  * @Date: 2021-03-05 09:48:24
  * @LastEditors: eliduty
- * @LastEditTime: 2023-05-17 17:16:55
+ * @LastEditTime: 2023-05-18 11:38:23
  * @Description:类型判断工具库
  */
 const toString = Object.prototype.toString;

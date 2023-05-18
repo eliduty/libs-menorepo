@@ -1,6 +1,6 @@
 {
   "name": "@eliduty/test",
-  "version": "1.0.12",
+  "version": "1.0.1",
   "description": "",
   "type": "module",
   "publishConfig": {
@@ -19,18 +19,13 @@
     "dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "unbuild",
-    "release": "release-it --ci"
+    "release": "release-it",
+    "release:patch": "release-it patch",
+    "release:minor": "release-it minor",
+    "release:major": "release-it major"
   },
   "keywords": [],
   "author": "eliduty<eliduty@qq.com>",
-  "license": "MIT",
-  "release-it": {
-    "git": {
-      "commitMessage": "chore: release @eliduty/test v${version}",
-      "tag": false,
-      "requireCleanWorkingDir": false
-    }
-  }
+  "license": "MIT"
 }
