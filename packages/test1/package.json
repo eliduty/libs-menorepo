@@ -1,8 +1,11 @@
 {
   "name": "@eliduty/test1",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
@@ -20,9 +23,17 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "unbuild"
+    "build": "unbuild",
+    "release": "release-it --ci"
   },
   "keywords": [],
   "author": "eliduty<eliduty@qq.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release @eliduty/test1 v${version}",
+      "tag": false,
+      "requireCleanWorkingDir": false
+    }
+  }
 }
