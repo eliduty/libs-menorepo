@@ -1,0 +1,28 @@
+{
+  "name": "@eliduty/test1",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./*": "./*"
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@eliduty/test": "workspace:*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "unbuild"
+  },
+  "keywords": [],
+  "author": "eliduty<eliduty@qq.com>",
+  "license": "MIT"
+}

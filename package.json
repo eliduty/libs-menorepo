@@ -1,0 +1,29 @@
+{
+  "name": "libs-menorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pnpm -r --filter=./packages/* run build",
+    "taze": "taze -Ir",
+    "typecheck": "tsc --noEmit",
+    "release": "release-it"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eliduty/test": "workspace:*",
+    "@eliduty/test1": "workspace:*",
+    "@tsconfig/node-lts": "^18.12.2",
+    "@types/node": "^20.1.7",
+    "pnpm": "^8.5.1",
+    "release-it": "^15.10.3",
+    "taze": "^0.10.1",
+    "typescript": "^5.0.4",
+    "unbuild": "^1.2.1"
+  },
+  "packageManager": "pnpm@8.5.1"
+}
