@@ -1,11 +1,8 @@
 {
   "name": "@eliduty/test",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
   "type": "module",
-  "publishConfig": {
-    "access": "public"
-  },
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
@@ -20,12 +17,12 @@
   ],
   "scripts": {
     "build": "unbuild",
-    "release": "release-it",
-    "release:patch": "release-it patch",
-    "release:minor": "release-it minor",
-    "release:major": "release-it major"
+    "release": "release-it"
   },
   "keywords": [],
-  "author": "eliduty<eliduty@qq.com>",
+  "author": {
+    "name": "eliduty",
+    "email": "eliduty@qq.com"
+  },
   "license": "MIT"
 }
