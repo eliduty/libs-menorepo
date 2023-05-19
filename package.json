@@ -37,6 +37,7 @@
     "prettier": "^2.8.8",
     "release-it": "^15.10.3",
     "simple-git-hooks": "^2.8.1",
+    "stylelint": "^15.6.2",
     "taze": "^0.10.1",
     "typescript": "^5.0.4",
     "unbuild": "^1.2.1",
