@@ -1,14 +1,16 @@
-import { type FunctionType, sum } from './type';
-
-export { type FunctionType };
 /*
  * @Author: eliduty
  * @Github: https://github.com/eliduty
  * @Date: 2021-03-05 09:48:24
  * @LastEditors: eliduty
- * @LastEditTime: 2023-05-18 11:38:23
+ * @LastEditTime: 2023-05-19 14:09:15
  * @Description:类型判断工具库
  */
+
+import { type FunctionType, sum } from './type';
+
+export { type FunctionType };
+
 const toString = Object.prototype.toString;
 
 /**
@@ -207,3 +209,5 @@ export const a: FunctionType = '1';
 export function sumFunction(a: number, b: number) {
   return sum(a, b);
 }
+
+const b = '1';
