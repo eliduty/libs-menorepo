@@ -5,12 +5,13 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "pnpm -r --filter=./packages/* run build",
     "taze": "taze -Ir",
     "typecheck": "tsc --noEmit",
     "release:pkg": "pnpm -r --filter=./packages/* run release",
-    "release": "release-it"
+    "release": "release-it",
+    "dev": "vitest",
+    "test": "vitest run"
   },
   "keywords": [],
   "author": "",
@@ -24,7 +25,8 @@
     "release-it": "^15.10.3",
     "taze": "^0.10.1",
     "typescript": "^5.0.4",
-    "unbuild": "^1.2.1"
+    "unbuild": "^1.2.1",
+    "vitest": "^0.31.1"
   },
   "packageManager": "pnpm@8.5.1",
   "release-it": {

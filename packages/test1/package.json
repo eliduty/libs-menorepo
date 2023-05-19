@@ -1,8 +1,31 @@
 {
   "name": "@eliduty/test1",
-  "version": "1.0.0",
+  "version": "1.0.3",
+  "author": {
+    "name": "eliduty",
+    "email": "eliduty@qq.com",
+    "url": "https://github.com/eliduty"
+  },
+  "license": "MIT",
   "description": "",
+  "keywords": [],
   "type": "module",
+  "homepage": "https://github.com/eliduty/libs/tree/main/packages/request#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliduty/libs-menorepo.git",
+    "directory": "packages/test"
+  },
+  "bugs": {
+    "url": "https://github.com/eliduty/libs-menorepo/issues"
+  },
+  "contributors": [
+    {
+      "name": "eliduty",
+      "email": "eliduty@qq.com",
+      "url": "https://github.com/eliduty"
+    }
+  ],
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
@@ -15,21 +38,8 @@
   "files": [
     "dist"
   ],
-  "dependencies": {
-    "@eliduty/test": "workspace:*"
-  },
   "scripts": {
     "build": "unbuild",
     "release": "release-it"
-  },
-  "keywords": [],
-  "author": "eliduty<eliduty@qq.com>",
-  "license": "MIT",
-  "release-it": {
-    "git": {
-      "commitMessage": "chore: release v${version}",
-      "tag": false,
-      "requireCleanWorkingDir": false
-    }
   }
 }
