@@ -1,4 +1,4 @@
-import { type FunctionType, sum } from "./type";
+import { type FunctionType, sum } from './type';
 
 export { type FunctionType };
 /*
@@ -27,7 +27,7 @@ export function is(val: unknown, type: string) {
  * @returns
  */
 export function isDef(val: unknown) {
-  return typeof val !== "undefined";
+  return typeof val !== 'undefined';
 }
 
 /**
@@ -45,7 +45,7 @@ export function isUnDef(val: unknown) {
  * @returns
  */
 export function isObject(val: unknown): val is Record<string, unknown> {
-  return val !== null && is(val, "Object");
+  return val !== null && is(val, 'Object');
 }
 
 /**
@@ -75,7 +75,7 @@ export function isEmpty(val: unknown) {
  * @returns
  */
 export function isDate(val: unknown): val is Date {
-  return is(val, "Date");
+  return is(val, 'Date');
 }
 
 /**
@@ -111,7 +111,7 @@ export function isNullOrUnDef(val: unknown): val is null | undefined {
  * @returns
  */
 export function isNumber(val: unknown): val is number {
-  return is(val, "Number");
+  return is(val, 'Number');
 }
 
 /**
@@ -120,12 +120,7 @@ export function isNumber(val: unknown): val is number {
  * @returns
  */
 export function isPromise(val: unknown): val is Promise<any> {
-  return (
-    is(val, "Promise") &&
-    isObject(val) &&
-    isFunction(val.then) &&
-    isFunction(val.catch)
-  );
+  return is(val, 'Promise') && isObject(val) && isFunction(val.then) && isFunction(val.catch);
 }
 
 /**
@@ -134,7 +129,7 @@ export function isPromise(val: unknown): val is Promise<any> {
  * @returns
  */
 export function isString(val: unknown): val is string {
-  return is(val, "String");
+  return is(val, 'String');
 }
 
 /**
@@ -143,7 +138,7 @@ export function isString(val: unknown): val is string {
  * @returns
  */
 export function isFunction(val: unknown) {
-  return is(val, "Function");
+  return is(val, 'Function');
 }
 
 /**
@@ -152,7 +147,7 @@ export function isFunction(val: unknown) {
  * @returns
  */
 export function isBoolean(val: unknown): val is boolean {
-  return is(val, "Boolean");
+  return is(val, 'Boolean');
 }
 
 /**
@@ -161,7 +156,7 @@ export function isBoolean(val: unknown): val is boolean {
  * @returns
  */
 export function isRegExp(val: unknown): val is RegExp {
-  return is(val, "RegExp");
+  return is(val, 'RegExp');
 }
 
 /**
@@ -179,7 +174,7 @@ export function isArray(val: any): val is any[] {
  * @returns
  */
 export function isWindow(val: unknown): val is Window {
-  return typeof window !== "undefined" && is(val, "Window");
+  return typeof window !== 'undefined' && is(val, 'Window');
 }
 
 /**
@@ -196,7 +191,7 @@ export function isElement(val: unknown): val is Element {
  * @returns
  */
 export function isServer() {
-  return typeof window === "undefined";
+  return typeof window === 'undefined';
 }
 
 /**
@@ -207,7 +202,7 @@ export function isClient() {
   return !isServer();
 }
 
-export const a: FunctionType = "1";
+export const a: FunctionType = '1';
 
 export function sumFunction(a: number, b: number) {
   return sum(a, b);
